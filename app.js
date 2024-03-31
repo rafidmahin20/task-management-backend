@@ -6,7 +6,7 @@ import fileUpload from "express-fileupload";
 import {errorMiddleware} from "./middlewares/errors.js";
 
 const app = express();
-dotenv.config({ path: "./config/.env"});
+dotenv.config({ path: ".env"});
 
 app.use(cookieParser());
 app.use(express.json());
