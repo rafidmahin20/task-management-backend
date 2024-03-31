@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import {dbConnection} from "./database/dbConnection.js";
 import fileUpload from "express-fileupload";
 import {errorMiddleware} from "./middlewares/errors.js";
+import userRouter from "./routes/userRouter.js";
 
 const app = express();
 dotenv.config({ path: ".env"});
