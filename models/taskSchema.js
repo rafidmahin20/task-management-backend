@@ -9,8 +9,8 @@ const taskSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ["Completed", "Incomplete"],
-        default: "Incomplete",
+        enum: ["completed", "incomplete"],
+        default: "incomplete",
     },
     archived: {
         type: Boolean,
